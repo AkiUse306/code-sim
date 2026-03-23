@@ -373,6 +373,29 @@
         "build": {
           "build/net8.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "AI.CodeAssistant.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "AI.CodeAssistant.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AI.CodeAssistant.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AI.CodeAssistant.Application.dll": {}
+        }
+      },
+      "AI.CodeAssistant.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/AI.CodeAssistant.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AI.CodeAssistant.Domain.dll": {}
+        }
       }
     }
   },
@@ -866,10 +889,22 @@
         "xunit.runner.visualstudio.3.1.4.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "AI.CodeAssistant.Application/1.0.0": {
+      "type": "project",
+      "path": "../../src/AI.CodeAssistant.Application/AI.CodeAssistant.Application.csproj",
+      "msbuildProject": "../../src/AI.CodeAssistant.Application/AI.CodeAssistant.Application.csproj"
+    },
+    "AI.CodeAssistant.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../src/AI.CodeAssistant.Domain/AI.CodeAssistant.Domain.csproj",
+      "msbuildProject": "../../src/AI.CodeAssistant.Domain/AI.CodeAssistant.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "AI.CodeAssistant.Application >= 1.0.0",
+      "AI.CodeAssistant.Domain >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.14.1",
       "coverlet.collector >= 6.0.4",
       "xunit >= 2.9.3",
@@ -900,7 +935,14 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/workspaces/code-sim/src/AI.CodeAssistant.Application/AI.CodeAssistant.Application.csproj": {
+              "projectPath": "/workspaces/code-sim/src/AI.CodeAssistant.Application/AI.CodeAssistant.Application.csproj"
+            },
+            "/workspaces/code-sim/src/AI.CodeAssistant.Domain/AI.CodeAssistant.Domain.csproj": {
+              "projectPath": "/workspaces/code-sim/src/AI.CodeAssistant.Domain/AI.CodeAssistant.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

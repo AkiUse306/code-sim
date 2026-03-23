@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AI.CodeAssistant.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45d983dcf7260710bdebe84370048a269f0cdcd3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4d53bc64c14d9970e0bbc1a13b596ee78f7ccb5")]
 [assembly: System.Reflection.AssemblyProductAttribute("AI.CodeAssistant.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AI.CodeAssistant.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
